@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brandon Wells</title>
+<meta name="description" content="Brandon Wells is a public policy student at Cornell's Brooks School focused on East Asia, international relations, and diplomacy.">
+<link rel="canonical" href="https://brandonpwells.com/">
+<meta property="og:title" content="Brandon Wells">
+<meta property="og:description" content="Public policy student at Cornell's Brooks School focused on East Asia, international relations, and diplomacy.">
+<meta property="og:url" content="https://brandonpwells.com/">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23C0402B'/%3E%3Ctext x='32' y='45' font-size='38' text-anchor='middle' fill='%23F3F3F0' font-family='serif'%3E%E5%92%8C%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Brandon Wells","url":"https://brandonpwells.com/","affiliation":{"@type":"CollegeOrUniversity","name":"Cornell University"},"alumniOf":{"@type":"EducationalOrganization","name":"Blair Academy"},"knowsLanguage":["en","zh","ja"],"sameAs":["https://youtube.com/@brandonpwells"]}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F3F3F0;
+    --paper-2:#ECECE7;
+    --sumi:#17181C;
+    --indigo:#2A3A66;
+    --cinnabar:#C0402B;
+    --muted:#5C5C58;
+    --rule:#DBDAD3;
+    --measure:40rem;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--sumi);
+    font-family:"Public Sans",system-ui,-apple-system,sans-serif;
+    font-size:1.125rem;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{
+    max-width:var(--measure);
+    margin:0 auto;
+    padding:clamp(3rem,8vw,6.5rem) 1.5rem clamp(3rem,6vw,5rem);
+  }
+  a{color:var(--indigo);text-decoration:none;border-bottom:1px solid var(--rule);transition:border-color .18s ease,color .18s ease;}
+  a:hover{color:var(--cinnabar);border-color:var(--cinnabar);}
+  a:focus-visible{outline:2px solid var(--indigo);outline-offset:3px;border-radius:2px;}
+
+  .portrait{
+    width:104px;height:104px;border-radius:50%;
+    object-fit:cover;
+    background:var(--paper-2);
+    display:flex;align-items:center;justify-content:center;
+    border:1px solid var(--rule);
+    color:var(--muted);
+    font-family:"Spectral",serif;font-size:.82rem;font-style:italic;
+    text-align:center;line-height:1.3;
+    margin-bottom:2.2rem;
+  }
+  .greeting{
+    font-family:"Spectral",serif;font-style:italic;font-weight:400;
+    font-size:1.2rem;color:var(--muted);margin:0 0 .35rem;
+  }
+  h1{
+    font-family:"Spectral",serif;font-weight:500;
+    font-size:clamp(2.7rem,7vw,4.3rem);
+    line-height:1.02;letter-spacing:-0.01em;
+    margin:0 0 1.4rem;
+    display:flex;align-items:baseline;gap:.5rem;flex-wrap:wrap;
+  }
+  .seal{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:.72em;height:.72em;
+    background:var(--cinnabar);color:var(--paper);
+    border-radius:5px;
+    font-family:"Spectral",serif;font-size:.42em;font-weight:500;line-height:1;
+    transform:translateY(-0.12em);
+    box-shadow:inset 0 0 0 1px rgba(0,0,0,.08);
+    user-select:none;
+  }
+  .lede{font-family:"Spectral",serif;font-size:1.32rem;line-height:1.5;margin:0 0 1.9rem;}
+  .bio p{margin:0 0 1.25rem;}
+  .bio p:last-child{margin-bottom:0;}
+
+  .contact{margin-top:2.2rem;font-size:1rem;}
+  .contact .links{margin-top:.5rem;display:flex;gap:1.4rem;flex-wrap:wrap;}
+
+  .rule{border:0;border-top:1px solid var(--rule);margin:clamp(3rem,6vw,4.5rem) 0;}
+  h2{
+    font-family:"Spectral",serif;font-weight:500;
+    font-size:clamp(1.5rem,3.5vw,1.85rem);line-height:1.15;
+    margin:0 0 1.6rem;
+  }
+
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem;}
+  .tile{
+    aspect-ratio:4/5;
+    background:linear-gradient(160deg,var(--paper-2),#e3e3dc);
+    border:1px solid var(--rule);border-radius:3px;
+    display:flex;align-items:flex-end;padding:.7rem;
+    color:var(--muted);font-size:.8rem;line-height:1.25;
+  }
+  @media(max-width:520px){.grid{grid-template-columns:repeat(2,1fr);}}
+
+  .facts{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem 2.2rem;font-size:1rem;margin:0;}
+  .facts dt{font-weight:600;color:var(--sumi);}
+  .facts dd{margin:.1rem 0 0;color:var(--muted);}
+  @media(max-width:520px){.facts{grid-template-columns:1fr;}}
+
+  .worklist{list-style:none;margin:0;padding:0;}
+  .worklist li{
+    padding:.85rem 0;border-top:1px solid var(--rule);
+    display:flex;justify-content:space-between;gap:1.5rem;align-items:baseline;
+  }
+  .worklist li:first-child{border-top:0;padding-top:0;}
+  .worklist .what{color:var(--sumi);font-weight:500;border:0;}
+  .worklist .what:hover{color:var(--cinnabar);}
+  .worklist .kind{color:var(--muted);font-size:.9rem;flex-shrink:0;}
+
+  footer{
+    margin-top:clamp(3rem,6vw,4.5rem);padding-top:1.6rem;
+    border-top:1px solid var(--rule);
+    font-size:.92rem;color:var(--muted);
+    display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;
+  }
+  footer a{font-size:.92rem;}
+
+  .placeholder{color:var(--cinnabar);font-style:italic;}
+
+  @media (prefers-reduced-motion: no-preference){
+    .wrap>*{opacity:0;transform:translateY(8px);animation:rise .7s cubic-bezier(.2,.7,.2,1) forwards;}
+    .wrap>*:nth-child(1){animation-delay:.05s;}
+    .wrap>*:nth-child(2){animation-delay:.10s;}
+    .wrap>*:nth-child(3){animation-delay:.15s;}
+    .wrap>*:nth-child(n+4){animation-delay:.20s;}
+    @keyframes rise{to{opacity:1;transform:none;}}
+  }
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <!-- To add your headshot: upload the photo to this repository, then replace this div with
+       <img class="portrait" src="headshot.jpg" alt="Brandon Wells"> -->
+  <div class="portrait placeholder">your<br>headshot</div>
+
+  <p class="greeting">Hello, my name is</p>
+  <h1>Brandon Wells<span class="seal" title="和, harmony, in Chinese and Japanese">和</span></h1>
+
+  <p class="lede">I study public policy at Cornell's Brooks School, where my work centers on East Asia, international relations, and diplomacy.</p>
+
+  <div class="bio">
+    <p>I grew up across Asia, spending fourteen years abroad, eight in China and six in Japan. That upbringing left me native in Mandarin and functional in Japanese, and it shaped how I read the region: not as a set of talking points, but as places I have actually lived. My interest in policy grows directly out of that experience, and out of a conviction that the relationship between the United States and East Asia will define much of this century.</p>
+
+    <p>At Cornell I focus on the machinery of foreign policy and the institutions that carry it out. Through Cornell in Washington I am studying Congress up close, including a seminar on legislative strategy taught by former Representative Steve Israel. Alongside my coursework I am pursuing self-directed study in alternative investments as a CAIA Level I candidate, on the view that capital and statecraft are harder to separate than most curricula admit.</p>
+
+    <p>Away from policy I keep a fourth interest that predates the rest: history. I run a YouTube channel on the Edo period, where I try to make two and a half centuries of Japanese life legible to people who have never opened a history book about it. I also practice kendo and row, two disciplines that reward patience far more than talent, which is likely why I have stayed with both.</p>
+
+    <p>I am always glad to meet people working on the Pacific, on diplomacy, or on the odder corners of Japanese history.</p>
+  </div>
+
+  <div class="contact">
+    Please feel free to reach me at <a href="mailto:your.email@example.com" class="placeholder">your.email@example.com</a>. Talk soon.
+    <div class="links">
+      <a href="#" class="placeholder">LinkedIn</a>
+      <a href="https://youtube.com/@brandonpwells">YouTube</a>
+    </div>
+  </div>
+
+  <hr class="rule">
+
+  <section>
+    <h2>A few snapshots from the road so far.</h2>
+    <div class="grid">
+      <div class="tile">Kendo, Fudokan</div>
+      <div class="tile">Filming an Edo episode</div>
+      <div class="tile">Cornell in Washington</div>
+      <div class="tile">On the water at dawn</div>
+      <div class="tile">Kyoto, along the Kamo</div>
+      <div class="tile">First semester, Ithaca</div>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <section>
+    <h2>Background.</h2>
+    <dl class="facts">
+      <div><dt>Languages</dt><dd>Mandarin (native), Japanese (working)</dd></div>
+      <div><dt>Study</dt><dd>Public policy, Cornell Brooks School</dd></div>
+      <div><dt>Credential in progress</dt><dd>CAIA Level I candidate</dd></div>
+      <div><dt>Certified</dt><dd>Lifeguard, CPR / AED, First Aid</dd></div>
+      <div><dt>Secondary school</dt><dd>Blair Academy</dd></div>
+      <div><dt>Lived</dt><dd>China, Japan, United States</dd></div>
+    </dl>
+  </section>
+
+  <hr class="rule">
+
+  <section>
+    <h2>Selected work &amp; writing.</h2>
+    <ul class="worklist">
+      <li><a href="https://youtube.com/@brandonpwells" class="what">A history of the Edo period</a><span class="kind">YouTube</span></li>
+      <li><a href="#" class="what placeholder">Add a piece of writing</a><span class="kind">Essay</span></li>
+      <li><a href="#" class="what placeholder">Add a policy project</a><span class="kind">Research</span></li>
+    </ul>
+  </section>
+
+  <footer>
+    <span>Brandon Wells, 2026</span>
+    <span>
+      <a href="mailto:your.email@example.com" class="placeholder">Email</a> &nbsp; <a href="https://youtube.com/@brandonpwells">YouTube</a>
+    </span>
+  </footer>
+
+</main>
+</body>
+</html>
